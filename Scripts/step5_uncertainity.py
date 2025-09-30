@@ -5,7 +5,7 @@ import pandas as pd, numpy as np, random
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-PLAYERS_CSV = r"C:/Users/leena/Downloads/syracuse_lacrosse_2025_player_stats.csv"
+PLAYERS_CSV = r"C:/Users/akash/Downloads/syracuse_lacrosse_2025_player_stats.csv"
 OUTDIR = Path("results/step5"); OUTDIR.mkdir(parents=True, exist_ok=True)
 
 np.random.seed(42); random.seed(42)
@@ -66,3 +66,4 @@ for _, r in featured.iterrows():
 
 pd.DataFrame(rows).to_csv(OUTDIR/"ppg_ci_table.csv", index=False)
 print("Step 5 complete →", OUTDIR.resolve())
+
