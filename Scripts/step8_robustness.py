@@ -5,7 +5,7 @@ import pandas as pd, numpy as np, random
 from scipy.stats import pearsonr, spearmanr
 from pathlib import Path
 
-PLAYERS_CSV = r"C:/Users/leena/Downloads/syracuse_lacrosse_2025_player_stats.csv"
+PLAYERS_CSV = r"C:/Users/akash/Downloads/syracuse_lacrosse_2025_player_stats.csv"
 OUTDIR = Path("results/step8"); OUTDIR.mkdir(parents=True, exist_ok=True)
 
 np.random.seed(42); random.seed(42)
@@ -142,3 +142,4 @@ for seed in [11, 42, 20250929]:
 pd.DataFrame(rows).to_csv(OUTDIR / "ci_width_sensitivity.csv", index=False)
 
 print("Step 8 complete →", OUTDIR.resolve())
+
