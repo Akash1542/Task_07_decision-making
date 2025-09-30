@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 # ---------- config ----------
-GAMES_CSV   = r"C:/Users/leena/Downloads/syracuse_lacrosse_2025_cleaned.csv"
-PLAYERS_CSV = r"C:/Users/leena/Downloads/syracuse_lacrosse_2025_player_stats.csv"
+GAMES_CSV   = r"C:/Users/akash/Downloads/syracuse_lacrosse_2025_cleaned.csv"
+PLAYERS_CSV = r"C:/Users/akash/Downloads/syracuse_lacrosse_2025_player_stats.csv"
 OUTDIR = Path("results/step3"); OUTDIR.mkdir(parents=True, exist_ok=True)
 
 # reproducibility
@@ -119,3 +119,4 @@ plt.title("PPG (≥5 GP) — Syracuse WLax 2025")
 plt.tight_layout(); plt.savefig(OUTDIR/"fig_ppg_ge5.png", dpi=180); plt.close()
 
 print("Step 3 complete →", OUTDIR.resolve())
+
