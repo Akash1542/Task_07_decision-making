@@ -5,7 +5,7 @@ import pandas as pd, numpy as np, random
 from scipy import stats
 from pathlib import Path
 
-PLAYERS_CSV = r"C:/Users/leena/Downloads/syracuse_lacrosse_2025_player_stats.csv"
+PLAYERS_CSV = r"C:/Users/akash/Downloads/syracuse_lacrosse_2025_player_stats.csv"
 OUTDIR = Path("results/step6"); OUTDIR.mkdir(parents=True, exist_ok=True)
 
 np.random.seed(42); random.seed(42)
@@ -51,3 +51,4 @@ if {'Minute','ShotOnTarget','GameID'}.issubset(df.columns):
             OUTDIR/"halftime_accuracy_test.csv", index=False)
 
 print("Step 6 complete →", OUTDIR.resolve())
+
